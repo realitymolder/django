@@ -1,15 +1,15 @@
-import { Route, Routes } from 'solid-app-router';
-import { Component, createEffect, createSignal } from 'solid-js';
-import Nav from './components/organisms/Nav';
-import { Repo } from './components/RepoCard';
-import Home from './components/pages/Home';
-import SavedRepos from './components/pages/SavedRepos';
-import HomePage from './components/pages/HomePage';
-import MusicPage from './components/pages/MusicPage';
-import MerchPage from './components/pages/MerchPage';
-import ContactPage from './components/pages/ContactPage';
+import { Route, Routes } from "solid-app-router";
+import { Component, createEffect, createSignal } from "solid-js";
+import NavigationOrganism from "./components/organisms/NavigationOrganism";
+import { Repo } from "./components/RepoCard";
+import Home from "./Home";
+import SavedRepos from "./components/pages/SavedRepos";
+import HomePage from "./components/pages/HomePage";
+import MusicPage from "./components/pages/MusicPage";
+import MerchPage from "./components/pages/MerchPage";
+import ContactPage from "./components/pages/ContactPage";
 
-const [username, setUsername] = createSignal('realitymolder');
+const [username, setUsername] = createSignal("realitymolder");
 const [repos, setRepos] = createSignal<Repo[]>([]);
 
 createEffect(async () => {
@@ -23,7 +23,7 @@ createEffect(async () => {
 const App: Component = () => {
   return (
     <div>
-      <Nav />
+      <NavigationOrganism />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/savedrepos" element={<SavedRepos />} />

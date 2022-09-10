@@ -1,5 +1,5 @@
-import { Component } from 'solid-js';
-import { savedRepos, setSavedRepos } from './pages/SavedRepos';
+import { Component } from "solid-js";
+import { savedRepos, setSavedRepos } from "./pages/SavedRepos";
 
 export type Repo = {
   id: string;
@@ -16,13 +16,13 @@ interface Props {
 }
 const saveRepo = (repo: Repo) => {
   setSavedRepos([repo, ...savedRepos()]);
-  localStorage.setItem('savedRepos', JSON.stringify(savedRepos()));
+  localStorage.setItem("savedRepos", JSON.stringify(savedRepos()));
 };
 
 const unsaveRepo = (repoId: string) => {
   const nextState = savedRepos()?.filter((item) => item.id !== repoId);
   setSavedRepos(nextState);
-  localStorage.setItem('savedRepos', JSON.stringify(savedRepos()));
+  localStorage.setItem("savedRepos", JSON.stringify(savedRepos()));
 };
 
 const repoIsSaved = (repoId: string) => {
@@ -32,8 +32,8 @@ const repoIsSaved = (repoId: string) => {
 
 const RepoCard: Component<Props> = ({ repo }) => {
   return (
-    <div class="card bg-gray-700 m-10">
-      <p class="text-xl mx-8 pt-5 text-yellow-300 font-bold ">
+    <div class="card m-10 bg-gray-700">
+      <p class="mx-8 pt-5 text-xl font-bold text-yellow-300 ">
         &#11088; Stars: {repo.stargazers_count}
       </p>
 
