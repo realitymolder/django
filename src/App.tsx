@@ -1,9 +1,13 @@
 import { Route, Routes } from 'solid-app-router';
 import { Component, createEffect, createSignal } from 'solid-js';
-import Nav from './components/Nav';
+import Nav from './components/organisms/Nav';
 import { Repo } from './components/RepoCard';
 import Home from './components/pages/Home';
 import SavedRepos from './components/pages/SavedRepos';
+import HomePage from './components/pages/HomePage';
+import MusicPage from './components/pages/MusicPage';
+import MerchPage from './components/pages/MerchPage';
+import ContactPage from './components/pages/ContactPage';
 
 const [username, setUsername] = createSignal('realitymolder');
 const [repos, setRepos] = createSignal<Repo[]>([]);
@@ -21,8 +25,11 @@ const App: Component = () => {
     <div>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/savedrepos" element={<SavedRepos />} />
+        <Route path="/music" element={<MusicPage />} />
+        <Route path="/merch" element={<MerchPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </div>
   );
