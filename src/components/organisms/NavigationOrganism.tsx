@@ -1,22 +1,18 @@
 import { NavLink } from "solid-app-router";
 import { Component } from "solid-js";
-import NavButton from "../atoms/NavigationButton";
+import ContainerAtom from "../atoms/ContainerAtom";
+import NavigationButtonsRowMolecule from "../molecules/NavigationButtonsRowMolecule";
 
 const NavigationOrganism: Component = () => {
   return (
-    <nav class="mx-auto flex w-full items-center justify-around py-6 px-52">
-      <div>
-        <NavButton linkName="Home" href="/" />
-        <NavButton linkName="Tour Dates" href="/tour" />
-      </div>
-
-      <h1 class="text-4xl font-bold">DJANGO</h1>
-      <div>
-        <NavButton linkName="Music" href="/music" />
-        <NavButton linkName="Merch" href="/merch" />
-        <NavButton linkName="Contact" href="/contact" />
-      </div>
-    </nav>
+    <ContainerAtom>
+      <nav class="mx-auto flex w-full items-center justify-around">
+        <h1 class="text-4xl font-bold">DJANGO</h1>
+        {/* //TODO: Replace with my logo. */}
+        <NavigationButtonsRowMolecule />
+        {/* //TODO: maybe add a CTA ? */}
+      </nav>
+    </ContainerAtom>
   );
 };
 
