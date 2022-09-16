@@ -1,14 +1,41 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1440px",
+    },
+    fontFamily: {
+      sans: ['"Ubuntu"', "sans-serif"],
+    },
+    extend: {
+      colors: {
+        background: "var(--color-background)",
+        titles: "var(--color-titles)",
+        subtitles: "var(--color-subtitles)",
+        primary: "var(--color-primary)",
+        primaryHover: "var(--color-primary-hover)",
+      },
+      backgroundImage: {
+        healthPros: "url('/images/backgrounds/backgrounds-healthpros.png')",
+        homePage:
+          "url('/images/backgrounds/backgrounds-healthpros-mobile.png')",
+      },
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [   require("tailwindcss"),
-  require("autoprefixer"),require("daisyui" , )],
+  plugins: [   
+    require("tailwindcss"),
+    require("autoprefixer"),
+    require("daisyui"),
+  ],
   daisyui: {
     styled: true,
     themes: true,
