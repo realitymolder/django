@@ -1,5 +1,5 @@
 import { Component } from "solid-js";
-import { savedRepos, setSavedRepos } from "./pages/SavedRepos";
+import { savedRepos, setSavedRepos } from "./SavedRepos";
 
 export type Repo = {
   id: string;

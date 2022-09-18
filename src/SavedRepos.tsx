@@ -1,5 +1,5 @@
 import { Component, createSignal, For } from "solid-js";
-import RepoCard, { Repo } from "../RepoCard";
+import RepoCard, { Repo } from "./RepoCard";
 
 const reposFromLocalStorage = JSON.parse(
   localStorage.getItem("savedRepos") || "[]"
