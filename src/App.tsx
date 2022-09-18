@@ -2,7 +2,7 @@ import { Route, Routes } from "solid-app-router";
 import { Component, createEffect, createSignal } from "solid-js";
 import NavigationOrganism from "./components/organisms/NavigationOrganism";
 import { Repo } from "./components/RepoCard";
-import Home from "./Home";
+import Home from "./HomeOLD";
 import SavedRepos from "./components/pages/SavedRepos";
 import HomePage from "./components/pages/HomePage";
 import MusicPage from "./components/pages/MusicPage";

@@ -22,7 +22,7 @@ module.exports = {
         primaryHover: "var(--color-primary-hover)",
       },
       backgroundImage: {
-        healthPros: "url('/images/backgrounds/backgrounds-healthpros.png')",
+        main: "url('/src/assets/backgrounds/main-background.jpg')",
         homePage:
           "url('/images/backgrounds/backgrounds-healthpros-mobile.png')",
       },

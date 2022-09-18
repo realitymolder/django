@@ -8,7 +8,12 @@ interface NavigationButtonInterface {
 
 const NavigationButton: Component<NavigationButtonInterface> = (props) => {
   return (
-    <NavLink href={props.href} class="btn mx-10" activeClass="text-green-500">
+    <NavLink
+      href={props.href}
+      class="btn mx-10"
+      end
+      activeClass="text-green-500"
+    >
       {props.linkName}
     </NavLink>
   );
