@@ -1,12 +1,12 @@
 import { Route, Routes } from "solid-app-router";
 import { Component, createEffect, createSignal } from "solid-js";
-import ContactPage from "./lib/features/contact/pages/ContactPage";
+import FooterOrganism from "./lib/shared/organisms/FooterOrganism";
+import NavigationOrganism from "./lib/shared/organisms/NavigationOrganism";
+
 import HomePage from "./lib/features/home/pages/HomePage";
 import MerchPage from "./lib/features/merch/pages/MerchPage";
 import MusicPage from "./lib/features/music/pages/MusicPage";
-
-import FooterOrganism from "./lib/shared/organisms/FooterOrganism";
-import NavigationOrganism from "./lib/shared/organisms/NavigationOrganism";
+import ContactPage from "./lib/features/contact/pages/ContactPage";
 import { Repo } from "./RepoCard";
 
 const [username, setUsername] = createSignal("realitymolder");

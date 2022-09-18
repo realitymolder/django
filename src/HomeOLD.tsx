@@ -1,6 +1,6 @@
 import { Component, For } from "solid-js";
 import { repos, setUsername, username } from "./App";
-import RepoCard, { Repo } from "./components/RepoCard";
+import RepoCard, { Repo } from "./RepoCard";
 
 const Home: Component = () => {
   const fetchWithUsername = (event: Event) => {
