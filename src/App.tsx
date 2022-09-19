@@ -1,4 +1,4 @@
-import { Route, Routes } from "solid-app-router";
+import { Route, Routes } from "@solidjs/router";
 import { Component, createEffect, createSignal } from "solid-js";
 import FooterOrganism from "./lib/shared/organisms/FooterOrganism";
 import NavigationOrganism from "./lib/shared/organisms/NavigationOrganism";

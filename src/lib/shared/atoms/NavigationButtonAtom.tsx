@@ -1,4 +1,4 @@
-import { NavLink } from "solid-app-router";
+import { NavLink } from "@solidjs/router";
 import { Component } from "solid-js";
 
 interface NavigationButtonInterface {
@@ -10,9 +10,9 @@ const NavigationButton: Component<NavigationButtonInterface> = (props) => {
   return (
     <NavLink
       href={props.href}
-      class="btn mx-10"
+      class="btn mx-10 text-titles"
       end
-      activeClass="text-green-500"
+      activeClass="text-primary"
     >
       {props.linkName}
     </NavLink>

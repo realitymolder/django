@@ -11,15 +11,16 @@ module.exports = {
       xl: "1440px",
     },
     fontFamily: {
-      sans: ['"Ubuntu"', "sans-serif"],
+      sans: ['"Futura"', "sans-serif"],
     },
     extend: {
       colors: {
         background: "var(--color-background)",
         titles: "var(--color-titles)",
-        subtitles: "var(--color-subtitles)",
+        text: "var(--color-text)",
         primary: "var(--color-primary)",
-        primaryHover: "var(--color-primary-hover)",
+        primaryhover: "var(--color-primary-hover)",
+        error: "var(--color-error)",
       },
       backgroundImage: {
         main: "url('/src/assets/backgrounds/main-background.jpg')",
@@ -38,7 +39,7 @@ module.exports = {
   ],
   daisyui: {
     styled: true,
-    themes: true,
+    themes: [],
     base: true,
     utils: true,
     logs: true,
