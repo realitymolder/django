@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+      --color-background: #1d1d1d;
+      --color-titles: #0091AD;
+      --color-text: #f7f7f7; 
+      --color-primary: #B7990D;
+      --color-primary-hover: #C2B527;
+      --color-error: #550C18;
+      /* --color-button-muted: 217, 214, 214; */
+      /* --color-our-values-path: #3d51ef;
+      --color-our-values-start: #d28ff1;
+      --color-our-values-end: #6012c3; */
+    }
+}
+
+body{
+  @apply bg-background;
+}

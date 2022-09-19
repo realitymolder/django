@@ -1,11 +1,15 @@
 import { Component } from "solid-js";
-import { NavLink } from "solid-app-router";
+import { NavLink } from "@solidjs/router";
 
 const LogoAtom: Component = () => {
   return (
     <NavLink href={"/"}>
-      {/* <h1 class="text-4xl font-bold">DJANGO</h1>*/}
-      <img src="../../../assets/images/django-logo.png" alt="DJANGO logo" />
+      <img
+        src="/src/assets/images/django-logo.png"
+        alt="DJANGO logo"
+        // height={30}
+        width={200}
+      />
     </NavLink>
   );
 };

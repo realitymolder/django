@@ -5,7 +5,6 @@ interface H1AtomInterface {
 }
 
 const H1Atom: Component<H1AtomInterface> = (props) => {
-  return <h1 class="text-4xl font-bold">{props.text}</h1>;
+  return <h1 class="text-4xl text-red-500">{props.text}</h1>;
 };
-
 export default H1Atom;
