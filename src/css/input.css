@@ -15,6 +15,27 @@
       --color-our-values-start: #d28ff1;
       --color-our-values-end: #6012c3; */
     }
+
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="search"],
+  [type="phone"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply w-full rounded-sm border-none px-[7%] py-4 text-primary 
+     shadow-md outline-none ring-0 transition-all focus:ring-2 focus:ring-primary;
+  }
 }
 
 body{

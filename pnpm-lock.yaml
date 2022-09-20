@@ -1,12 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fortawesome/free-solid-svg-icons': ^6.2.0
   '@solidjs/router': ^0.4.3
   autoprefixer: ^10.4.11
   daisyui: ^2.28.0
   postcss: ^8.4.16
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.1.13
+  solid-fa: ^0.1.0
   solid-js: ^1.5.1
   tailwindcss: ^3.1.8
   typescript: ^4.8.2
@@ -14,8 +16,10 @@ specifiers:
   vite-plugin-solid: 2.3.0
 
 dependencies:
+  '@fortawesome/free-solid-svg-icons': 6.2.0
   '@solidjs/router': 0.4.3_solid-js@1.5.5
   daisyui: 2.28.0_6b4luod745iryv24jvdbvzbbsa
+  solid-fa: 0.1.0_solid-js@1.5.5
   vite: 3.0.9
 
 devDependencies:
@@ -350,6 +354,20 @@ packages:
     os: [linux]
     requiresBuild: true
     optional: true
+
+  /@fortawesome/fontawesome-common-types/6.2.0:
+    resolution: {integrity: sha512-rBevIsj2nclStJ7AxTdfsa3ovHb1H+qApwrxcTVo+NNdeJiB9V75hsKfrkG5AwNcRUNxrPPiScGYCNmLMoh8pg==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
+  /@fortawesome/free-solid-svg-icons/6.2.0:
+    resolution: {integrity: sha512-UjCILHIQ4I8cN46EiQn0CZL/h8AwCGgR//1c4R96Q5viSRwuKVo0NdQEc4bm+69ZwC0dUvjbDqAHF1RR5FA3XA==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.2.0
+    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
@@ -1158,6 +1176,14 @@ packages:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
     dependencies:
       is-arrayish: 0.3.2
+    dev: false
+
+  /solid-fa/0.1.0_solid-js@1.5.5:
+    resolution: {integrity: sha512-5DSFt0aibr5FS8jssadXKmG2NEubjuvxxqrJDh8ingYNAFP9dextiG0w0Wn+ssdrUUEwDxIAN31g2OMBQI7p+A==}
+    peerDependencies:
+      solid-js: ^1.0.0
+    dependencies:
+      solid-js: 1.5.5
     dev: false
 
   /solid-js/1.5.5:
